@@ -1,17 +1,17 @@
 info:
-  name: POST - livros
+  name: DELETE - livros copy
   type: http
-  seq: 2
+  seq: 5
 
 http:
-  method: POST
-  url: http://localhost:3000/livros
+  method: DELETE
+  url: http://localhost:3000/livros/69797d42f1cf46825ae0dcb4
   body:
     type: json
     data: |
       {
         "titulo": "Refatoração: Aperfeiçoando o Design de Código Existente",
-        "editora": "Addison-Wesley",
+        "editora": "Addison Wesley",
         "preco": 159.90,
         "numeroPaginas": 448
       }
