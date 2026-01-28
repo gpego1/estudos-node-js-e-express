@@ -1,0 +1,22 @@
+info:
+  name: POST - livros
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/livros
+  body:
+    type: json
+    data: |-
+      {
+        "id":3,
+        "titulo":"madeira"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
